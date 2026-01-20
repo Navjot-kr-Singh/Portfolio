@@ -568,7 +568,11 @@ section {
     transform: translateY(-2px) scale(1.05);
     box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
 }
-
+.tech-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
 .skill-badge i {
     color: var(--accent-cyan);
 }
@@ -1882,4 +1886,61 @@ section {
         transform: translateY(0px) translateX(0px) rotate(360deg);
         opacity: 0.3;
     }
+}
+
+.skill-badge {
+    background: var(--bg-tertiary);
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    display: inline-block;
+    margin: 4px;
+    font-size: 0.9rem;
+}
+
+/* Bright Mode for Coding Profiles */
+.coding-profiles .coding-card {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--accent-cyan);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: 0.3s ease;
+    text-decoration: none;
+    color: var(--text-primary);
+    box-shadow: 0 0 10px rgba(0,255,255,0.2);
+}
+
+.coding-profiles .coding-card:hover {
+    border-color: var(--accent-green);
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(0,255,255,0.5), 0 0 30px rgba(0,255,136,0.4);
+}
+
+.coding-profiles .coding-card .category-title {
+    color: var(--accent-cyan);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 0 10px var(--glow-cyan);
+}
+
+.bright-badge {
+    background: rgba(0,255,255,0.12);
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-green);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    transition: 0.3s ease;
+}
+
+.bright-badge:hover {
+    background: rgba(0,255,136,0.2);
+    border-color: var(--accent-green);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,255,255,0.4);
+}
+
+.bright-badge strong {
+    color: var(--accent-green);
 }
