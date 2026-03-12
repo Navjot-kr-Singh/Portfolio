@@ -325,6 +325,7 @@ function addNewProjectCards(projectsData) {
             <div class="project-description">
                 <p>${project.description}</p>
             </div>
+            
             <div class="project-features">
                 <ul>
                     ${project.features.map(feature => `<li>${feature}</li>`).join('')}
